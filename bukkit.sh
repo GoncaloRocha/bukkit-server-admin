@@ -29,7 +29,7 @@ function gravar {
 
 # AO DETECTAR OS PARAMETROS...
 if [ "$1" = "reporbackup" ]; then
-        ls -tlh /home/btsync/MineBackup |head -14
+        ls -tlh $BKUPDIR |head -14
         echo -n "Please write down the file with the desired date:  "
         read BKUP_FILE
         echo $BKUP_FILE
